@@ -12,8 +12,11 @@ gem 'sass-rails', '~> 4.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
-gem 'ember-source', '1.0.0.rc6.2'
-gem 'ember-rails', '0.13.0'
+gem 'ember-source'
+gem 'ember-rails'
+
+gem 'inherited_resources'
+gem "active_model_serializers"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -24,6 +27,11 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development do
+  gem 'meta_request'
+  gem 'rails_panel'
 end
 
 # Use ActiveModel has_secure_password

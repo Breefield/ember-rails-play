@@ -1,0 +1,10 @@
+<h2>Posts</h2>
+
+<ul>
+  {{#each model}}
+    <li>
+      <h4>{{#linkTo 'posts.show' this}}{{title}}{{/linkTo}}</h4>
+      <p>{{created_at}}</p>
+    </li>
+  {{/each}}
+</ul>
